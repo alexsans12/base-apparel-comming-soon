@@ -40,10 +40,9 @@ body {
 @media screen and (min-width: 800px) {
     body {
         display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 25% 1fr;
-        background: url("../images/bg-pattern-desktop.svg") center / cover
-                no-repeat,
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 220px 1fr;
+        background: url("../images/bg-pattern-desktop.svg") top left no-repeat,
             var(--Gradient_Background);
     }
 }
@@ -102,7 +101,13 @@ body {
         width: 70%;
         max-width: none;
         text-align: left;
-        padding: 0 140px 0 30px;
+        padding: 0 90px 0 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-apparel {
+        margin-top: 2.5rem;
     }
 }
 
@@ -139,6 +144,7 @@ body {
     .main-apparel__text {
         font-size: 16px;
         line-height: 1.8;
+        margin-bottom: 40px;
     }
 }
 
@@ -225,7 +231,7 @@ body {
 
 @media screen and (min-width: 800px) {
     .form-apparel__button {
-        width: 90px;
+        width: 110px;
         height: 60px;
     }
 }
