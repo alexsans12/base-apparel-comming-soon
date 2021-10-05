@@ -41,9 +41,15 @@ body {
     body {
         display: grid;
         grid-template-columns: 55% 45%;
-        grid-template-rows: 220px 1fr;
+        grid-template-rows: 170px 1fr;
         background: url("../images/bg-pattern-desktop.svg") top left no-repeat,
             var(--Gradient_Background);
+    }
+}
+
+@media screen and (min-height: 900px) {
+    body {
+        grid-template-rows: 220px 1fr;
     }
 }
 
