@@ -180,13 +180,14 @@ body {
 .form-apparel__error-icon::before {
     content: url("../images/icon-error.svg");
     position: absolute;
-    right: 75px;
     top: 12px;
+    right: 75px;
 }
 
 @media screen and (min-width: 800px) {
     .form-apparel__error-icon::before {
-        right: 95px;
+        top: 15px;
+        right: 120px;
     }
 }
 
@@ -196,6 +197,7 @@ body {
     font-size: 14px;
     width: 70%;
     color: var(--Dark_Grayish_Red);
+    background: transparent;
 }
 
 @media screen and (min-width: 800px) {
@@ -213,6 +215,9 @@ body {
 }
 
 .form-apparel__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 65px;
     height: 50px;
     position: absolute;
@@ -240,10 +245,6 @@ body {
         width: 110px;
         height: 60px;
     }
-}
-
-.form-apparel__button > img {
-    margin: 5px 0 0 5px;
 }
 
 .form-apparel__error {

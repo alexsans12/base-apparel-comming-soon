@@ -1,10 +1,11 @@
 const form = document.querySelector(".form-apparel");
 const inputEmail = document.querySelector("#email");
+const button = document.querySelector(".form-apparel__button")
 const labelMessage = document.querySelector(".form-apparel__error");
 const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
-form.addEventListener('submit', emailValidation);
+button.addEventListener('click', emailValidation);
 
 function emailValidation(e) {
     e.preventDefault();
