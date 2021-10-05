@@ -1,0 +1,209 @@
+:root {
+    --Desaturated_Red: hsl(0, 36%, 70%);
+    --Soft_Red: hsl(0, 93%, 68%);
+
+    --Dark_Grayish_Red: hsl(0, 6%, 24%);
+
+    --Gradient_Light: linear-gradient(135deg, hsl(0, 85%, 90%), hsl(0, 85%, 90%));
+    --Gradient_Soft: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+}
+
+.header-apparel {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .header-apparel {
+        margin: 60px auto 0;
+        width: 80%;
+    }
+}
+
+.nav-apparel {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.nav-apparel__logo {
+    width: 110px;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-apparel__logo {
+        width: 150px;
+    }
+}
+
+.hero-apparel {
+    width: 100%;
+    height: 250px;
+    background: url('../images/hero-mobile.jpg') center no-repeat,
+    var(--Gradient_Soft);
+}
+
+@media screen and (min-width: 800px) {
+    .hero-apparel {
+        background: url('../images/hero-desktop.jpg') center / cover no-repeat;
+        grid-row: span 2;
+        height: 100vh;
+    }
+}
+
+.main-apparel {
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+    max-width: 400px;
+}
+
+@media screen and (min-width: 800px) {
+    .main-apparel {
+        margin: 0 auto;
+        width: 80%;
+        max-width: none;
+        text-align: left;
+        padding: 0 140px 0 30px;
+    }
+}
+
+.main-apparel__title {
+    color: var(--Desaturated_Red);
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 60px 0 20px 0;
+}
+
+@media screen and (min-width: 800px) { 
+    .main-apparel__title {
+        font-size: 3.5rem;
+        letter-spacing: 15px;
+    }
+}
+
+.main-apparel__title--bold {
+    font-weight: 600;
+    color: var(--Dark_Grayish_Red);
+}
+
+.main-apparel__text {
+    color: var(--Desaturated_Red);
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-apparel {
+    margin-top: 30px;
+    margin-bottom: 6rem;
+    border: 1px var(--Desaturated_Red) solid;
+    border-radius: 30px;
+}
+
+.form-apparel__group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-apparel__error-icon {
+    border: 1px var(--Soft_Red) solid;
+}
+
+.form-apparel__error-icon::before {
+    content: url('../images/icon-error.svg');
+    position: absolute;
+    right: 75px;
+    top: 12px;
+}
+
+@media screen and (min-width: 800px) { 
+    .form-apparel__error-icon::before {
+        right: 95px;
+    }
+}
+
+.form-apparel__email {
+    border: none;
+    margin: 15px 0 15px 20px;
+    font-size: 14px;
+    width: 70%;
+    color: var(--Dark_Grayish_Red);
+}
+
+.form-apparel__email::placeholder {
+    color: var(--Desaturated_Red)
+}
+
+.form-apparel__email:focus-visible {
+    outline: none;
+}
+
+.form-apparel__button {
+    width: 65px;
+    height: 50px;
+    position: absolute;
+    bottom: -1px;
+    right: -2px;
+    background: var(--Gradient_Soft);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 30px -10px var(--Soft_Red);
+    -moz-box-shadow: 0px 10px 30px -10px var(--Soft_Red);
+    box-shadow: 0px 10px 30px -10px var(--Soft_Red);
+}
+
+.form-apparel__button:hover {
+    background: var(--Gradient_Light);
+    -webkit-box-shadow: 0px 10px 30px -5px var(--Soft_Red);
+    -moz-box-shadow: 0px 10px 30px -5px var(--Soft_Red);
+    box-shadow: 0px 10px 30px -5px var(--Soft_Red);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) { 
+    .form-apparel__button {
+        width: 85px;
+    }
+}
+
+.form-apparel__button > img {
+    margin: 5px 0 0 5px;
+}
+
+.form-apparel__error {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 30px;
+    font-size: 12px;
+    color: var(--Soft_Red);
+}
+
+.form-apparel__error--show {
+    display: block;
+}
