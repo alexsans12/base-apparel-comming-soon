@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/base-apparel-comming-soon-responsive-yKKMeRzQy)
+- Live Site URL: [Netlify](https://section-base-apparel-comming-soon.netlify.app/)
 
 ## My process
 
